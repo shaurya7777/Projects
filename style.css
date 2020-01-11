@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.a{
+    height: 100vh;
+    width: 100%;
+    background-image:url(4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.b{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(3.jpg);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: b 5s linear infinite;
+}
+@keyframes b
+{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.c{
+    height: 250px;
+    width: 500%;
+    background-image: url(2.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: c 20s linear infinite;
+
+}
+@keyframes c
+{
+    100%{
+        transform: translateX(-1400px);
+    } 
+}
+
+.d{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+
+}
+.d img{
+    width: 100%;
+    animation: car 1s linear infinite;
+
+}
+@keyframes car{
+
+    100%{
+        transform: translateY(-1px);
+    }
+
+
+    50%{
+        transform: translateY(-1px);
+    }
+
+    100%{
+        transform: translateY(-1px);
+    }
+}
+.e{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.e img{
+
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite
+}
+.back-wheel{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel{
+    left: 80px;
+    position: absolute;
+}
+
+@keyframes wheel
+{
+   100%{
+         transform: rotate(360deg);
+    }
+
+}
+
